@@ -99,14 +99,17 @@ textarea {
      align-items: center;
      flex-flow: row wrap;
      width: 100%;
-     background-color: black;
+     background-color: orange;
    }
+
+   /*===== RESPONSIVE HAMBURGER MENU STYLING =======*/
 
    .menu-wrap {
      position: absolute;
      top:20px;
      right: 10px;
      z-index: 1;
+     width: 100%;
    }
 
    .menu-wrap .toggler {
@@ -234,14 +237,19 @@ textarea {
    .menu-wrap .menu > nav > div > ul {
      padding: 0;
      width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
    }
 
    .menu-wrap .menu > nav > div > ul > li {
      list-style: none;
      color: #1E3A50;
      font-family: "Overpass", sans-serif;
-     font-size: 1.25rem;
+     font-size: 1.125rem;
      padding: 1rem;
+     width: 90%;
    }
 
    .menu-wrap .menu > nav > div > ul > li > a {
@@ -250,37 +258,28 @@ textarea {
      transition: color 0.4s ease;
    }
 
-   .menu-wrap .menu .login-section {
-     border-top: 1px solid #efeff1;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-flow: row wrap;
+
+
+   /*Login Section */
+
+   #login {
+      border-top: 1px solid #efeff1;
+      padding-top: 25px;
    }
 
-   .menu-wrap .menu .login-section ul {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-flow: row wrap;
-     width: 50%;
-     padding-bottom: 15px;
-   }
-
-   .menu-wrap .menu .login-section ul li {
-     padding: 1.5rem;
+   #signup {
+     background: linear-gradient(150deg, #FF8F70, #FF3D54);
+     border-radius: 25px;
+     color: #FFF;
+     font-family: 'Ubuntu', sans-serif;
+     font-size: 1em;
+     width: 35%;
+     padding: 10px 15px;
    }
 
 
-   .menu-wrap .menu .login-section .signup {
-       background: linear-gradient(150deg, #FF8F70, #FF3D54);
-       border-radius: 25px;
-       color: #FFF;
-       font-family: 'Ubuntu', sans-serif;
-       font-size: 1em;
-       width: 90%;
-       padding: 10px 15px;
-   }
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
