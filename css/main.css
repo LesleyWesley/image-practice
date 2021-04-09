@@ -100,6 +100,7 @@ textarea {
      flex-flow: row wrap;
      width: 100%;
      background-color: orange;
+     height: 2000px;
    }
 
    /*===== RESPONSIVE HAMBURGER MENU STYLING =======*/
@@ -202,7 +203,7 @@ textarea {
      top: 125px;
      right: 0;
      width: 100%;
-     height: 500px;
+     height: 1000px;
      visibility: hidden;
      Overflow: hidden;
      display: flex;
@@ -213,24 +214,25 @@ textarea {
    .menu-wrap .menu > nav {
      background: #FFF;
      width: 90%;
-     height: auto;
+     height: fit-content;
      display: flex;
      align-items: flex-start;
      justify-content: center;
      flex-flow: row wrap;
      transform: scale(0);
-     transition: all 0.4s ease;
      border-radius: 2%;
+     transition: all 0.4s ease;
      box-shadow: 5px 5px 20px rgba(37, 37, 45, 0.1)
    }
 
    .menu-wrap .menu > nav > div {
      text-align: center;
-     width: 90%;
+     width: 100%;
      max-width: 90vw;
      max-height: 100vw;
      opacity: 0;
      transition: opacity 0.4s ease;
+
    }
 
 
@@ -241,6 +243,8 @@ textarea {
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
+     background-color: #FFF;
+     border-radius: 2%
    }
 
    .menu-wrap .menu > nav > div > ul > li {
@@ -252,12 +256,51 @@ textarea {
      width: 90%;
    }
 
+   .menu-wrap .menu > nav > div > ul > li > img {
+     width: 5%;
+   }
+
    .menu-wrap .menu > nav > div > ul > li > a {
      color: inherit;
      text-decoration: none;
      transition: color 0.4s ease;
    }
 
+  /*Dropdown Menu Styling */
+
+   .dropdown {
+     display: none;
+     justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
+     background-color: #efeff1;
+     margin-top: 20px;
+     border-radius: 2%;
+     padding: 20px 0;
+   }
+
+   .dropdown a {
+     width: 100%;
+     text-decoration: none;
+     color: #526573;
+     line-height: 40px;
+     font-size: .9em;
+   }
+
+   /* Dropdown Menu Animation */
+
+   .menu-wrap .menu >nav > div > ul > li:hover {
+     color: #526573;
+   }
+
+   .menu-wrap .menu > nav > div > ul > li:hover .dropdown {
+     display: flex;
+   }
+
+   .menu-wrap .menu > nav > div > ul > li:hover img {
+     transform: rotate(180deg);
+     transition-duration: .4s;
+   }
 
 
    /*Login Section */
@@ -275,6 +318,7 @@ textarea {
      font-size: 1em;
      width: 35%;
      padding: 10px 15px;
+     margin-bottom: 10px
    }
 
 
